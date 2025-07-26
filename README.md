@@ -1,25 +1,25 @@
 # Conclusion
-- Dalam  dataset  yang  digunakan  sebanyak  1  juta  baris  data  memiliki  jumlah  data 
-antar kelas positif dan negatif yang berbeda pada variabel target, kelas negatif lebih 
-banyak  daripada  kelas  positif  perbedaan  ini  memiliki  rasio  90:10  untuk  itu 
-dilakukan teknik slicing pada kelas negatif supaya jumlah data seimbang. Peneliti 
-tidak melakukan teknik SMOTE dikarenakan rasio yang memiliki perbedaan yang 
-cukup jauh. Karena konsep dari  teknik SMOTE ini melakukan replica pada kelas 
-tertentu yang berati melakukan duplikasi kembali terhadap data dan ini akan rentan 
-terhadap model menjadi overfitting.
-- Feature extraction yang digunakan adalah teknik SelectKBest dengan 5 fitur yang 
-terbaik  di antaranya  fitur  month,  velocity_4w,  velocity_24h,   housing_status  dan 
-credit_risk_score. Dan terdapat outlier pada credit_risk_score dan housing status 
-sehingga dilakukan penghapusan outlier pada fitur tersebut.
-- Metode deep learning lebih unggul dari  pada machine learning klasik hal ini karena 
-metode deep learning umunnya sering digunakan pada hal yang kompleks mulai 
-dari data terstruktur dan data yang tidak terstruktur.
+- In the dataset used, which contains 1 million rows of data, there is a difference in the amount of data 
+between positive and negative classes in the target variable, with the negative class having more 
+data than the positive class. This difference has a ratio of 90:10, so 
+a slicing technique was applied to the negative class to balance the amount of data. The researcher 
+did not use the SMOTE technique because the ratio difference was 
+quite significant. The concept of the SMOTE technique involves replicating a specific class, 
+which means duplicating the data, and this could lead to 
+the model becoming overfitted.
+- The feature extraction technique used is SelectKBest with the 5 best features, 
+including month, velocity_4w, velocity_24h, housing_status, and 
+credit_risk_score. There are outliers in credit_risk_score and housing status, 
+so outlier removal is performed on these features.
+- Deep learning methods are superior to classical machine learning because 
+deep learning methods are generally used for complex tasks, ranging from 
+structured data to unstructured data.
 
 
-  Untuk rekomendasi dari peneliti disarankan untuk melakukan penyeimbangan jumlah 
-data yang seragam pada masing-masing kelas variabel target yakni fitur fraud_bool untuk 
-mendapatkan  hasil  yang  optimal  dan  mengurangi  terjadinya  overfitting  model.  Karena 
-terkait cakupan dan batasan dalam penilitian, disarankan untuk melakukan hyperparameter 
-tuning kembali pada metode deep learning supaya hasilnya lebih optimal, hyperparameter 
-tuning tersebut bisa dilakukan pada jumlah layer, neuron, dan pengaturan fungsi aktifasi
-seperti ReLu dan sebagainya.
+For recommendations from researchers, it is suggested to balance the amount of 
+uniform data in each target variable class, namely the fraud_bool feature, to 
+obtain  optimal  results  and  reduce  the  occurrence  of  model overfitting.  Due to 
+the scope and limitations of the research, it is recommended to perform hyperparameter 
+tuning again on the deep learning method to achieve more optimal results. Hyperparameter 
+tuning can be performed on the number of layers, neurons, and activation function settings
+such as ReLu and so on.
