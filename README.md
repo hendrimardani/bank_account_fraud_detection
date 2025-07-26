@@ -14,10 +14,12 @@ sehingga dilakukan penghapusan outlier pada fitur tersebut.
 - Metode deep learning lebih unggul dari  pada machine learning klasik hal ini karena 
 metode deep learning umunnya sering digunakan pada hal yang kompleks mulai 
 dari data terstruktur dan data yang tidak terstruktur.
-Untuk rekomendasi dari peneliti disarankan untuk melakukan penyeimbangan jumlah 
+
+
+  Untuk rekomendasi dari peneliti disarankan untuk melakukan penyeimbangan jumlah 
 data yang seragam pada masing-masing kelas variabel target yakni fitur fraud_bool untuk 
 mendapatkan  hasil  yang  optimal  dan  mengurangi  terjadinya  overfitting  model.  Karena 
-terkait cakupan dan batasan dalam penilitian, disarankan untuk melakukan hyperparamete r 
+terkait cakupan dan batasan dalam penilitian, disarankan untuk melakukan hyperparameter 
 tuning kembali pada metode deep learning supaya hasilnya lebih optimal, hyperparameter 
 tuning tersebut bisa dilakukan pada jumlah layer, neuron, dan pengaturan fungsi aktifasi
 seperti ReLu dan sebagainya.
