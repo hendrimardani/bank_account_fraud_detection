@@ -61,6 +61,24 @@ pd.DataFrame({
 }, index=["Random Forest", "Logistic Regression", "SVC", "Naive Bayes", "KNeighbors", "Decision Tree"])
 
 
+report_dict = classification_report(y_test, y_pred_grid, output_dict=True)
+grid_acc = report_dict["accuracy"]
+grid_precision = report_dict["macro avg"]["precision"]
+grid_recall = report_dict["macro avg"]["recall"]
+grid_f1_score = report_dict["macro avg"]["f1-score"]
+
+
+pd.DataFrame({
+    "accuracy": [rf_acc, lr_acc, svc_acc, nb_acc, kn_acc, dt_acc, grid_acc], 
+    "precision": [rf_precision, lr_precision, svc_precision, nb_precision, kn_precision, dt_precision, grid_precision],
+    "recall": [rf_recall, lr_recall, svc_recall, nb_recall, kn_recall, dt_recall, grid_recall],
+    "f1_score": [rf_f1_score, lr_f1_score, svc_f1_score, nb_f1_score, kn_f1_score, dt_f1_score, grid_f1_score]
+}, index=["Random Forest", "Logistic Regression", "SVC", "Naive Bayes", "KNeighbors", "Decision Tree", "Grid Random Forest"])
+
+
+
+
+
 
 # Conclusion
 - In the dataset used, which contains 1 million rows of data, there is a difference in the amount of data 
