@@ -77,8 +77,8 @@ pd.DataFrame({
 
 
 
-
-
+# Description
+Bank Account Fraud Detection is a machine learning project designed to identify and predict suspicious or fraudulent activity during account openings and banking transactions. In the financial industry, losses due to fraud are significant. This project aims to build a predictive model that can automatically distinguish between legitimate customers/transactions and those with potential for fraud based on historical data patterns, thereby enhancing bank security systems and preventing financial losses.
 
 # Conclusion
 - In the dataset used, which contains 1 million rows of data, there is a difference in the amount of data 
